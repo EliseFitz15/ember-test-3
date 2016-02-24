@@ -1,0 +1,8 @@
+
+{{add-book onAdd=(action 'addBook')}}
+
+<ul>
+{{#each books as |book|}}
+  <li>{{ book.title }}</li>
+{{/each}}
+</ul>

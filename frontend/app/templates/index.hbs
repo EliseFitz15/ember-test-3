@@ -1,0 +1,12 @@
+<h1>Welcome to Book Reviewing in Ember</h1>
+
+<p>Peruse the books below.</p>
+
+{{#each model as |book|}}
+  <h2>{{book.title}}</h2>
+  <p>Author: {{book.author}}</p>
+  <p>Description: {{book.description}}</p>
+{{/each}}
+
+
+{{#link-to "about"}}About{{/link-to}}
